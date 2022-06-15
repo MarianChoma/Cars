@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+header{
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 0 0 5px 8px #5f5f5f;
+    width: 100%;
+    height: 12%;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(to right, yellow,yellowgreen);
+    text-align: center;
+    justify-content: center;
+}
+.content{
+    margin: 25px auto 5%;
+    min-width: 576px;
+}
+
+.tooltip {
+    min-width: 180px;
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+}
+
+@media (max-width: 992px){
+    .obrazok{
+        display: none;
+    }
+}
+@media (min-width: 576px){
+    .content,header{
+        width: 540px;
+    }
+    .tooltip{
+        width: 180px;
+    }
+}
+@media (min-width: 768px){
+    .content,header{
+        width: 720px;
+    }
+    .tooltip{
+        width: 180px;
+    }
+}
+@media (min-width: 992px) {
+    .content,header{
+        width: 960px;
+    }
+    .tooltip{
+        width: 194px;
+    }
+}
+@media (min-width: 1200px) {
+    .content,header{
+        width: 1140px;
+    }
+   .tooltip{
+        width: 230px;
+    }
+}
+
+h1{
+    padding-top: 1%;
+}
+.cars{
+    position: relative;
+    width: 100%;
+    padding-top:50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("./images/cars.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, yellow,yellowgreen);
+}
+.marker{
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    z-index: 0;
+    transform: scale(1);
+    animation: pulse 3s infinite;
+}
+
+#kiatool{
+    top: -5px;
+    left: 105%;
+}
+#hondatool{
+    right: 105%;
+}
+#mustangtool{
+    right: 105%;
+}
+#mazdatool{
+    right: 102%;
+}
+#nissantool{
+    left: 105%;
+}
+#volkswagentool{
+    left: 105%;
+}
+
+.marker:hover .tooltip {
+    visibility: visible;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0  rgba(0, 0, 0, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+.obrazok{
+    height:100px;
+    width:100px;
+}
+
+#kia{
+    height: 51%;
+    width: 48%;
+    top:2%;
+    left: 1%;
+}
+.marker:hover{
+    animation: none;
+}
+#honda{
+    top:2.5%;
+    left: 50.5%;
+    height: 40%;
+    width: 23%;
+}
+#mustang{
+    top:2.5%;
+    right: 1%;
+    height: 40%;
+    width: 23%;
+}
+#nissan{
+    bottom: 2.5%;
+    left: 1%;
+    height: 40%;
+    width: 23%;
+}
+#volkswagen{
+    height: 40%;
+    width: 23%;
+    left: 26%;
+    bottom: 2.5%;
+}
+#mazda{
+    height: 51%;
+    width: 48%;
+    bottom:2%;
+    right: 1%;
+}
+footer{
+    background-color: yellowgreen;
+    color:white;
+    width: 20%;
+    padding: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 13%;
+}
+
+ul li{
+    display: inline;
+    margin-left: 2%;
+}
